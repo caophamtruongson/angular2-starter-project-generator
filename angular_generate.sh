@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-type npm >/dev/null 2>&1 || (echo "You must install \`npm\` before running this script." && exit 0);
+angular_generate() {
 
-__dirname="${PWD##*/}"
-__date=`date +%-m/%-d/%y`
-__user=`whoami`
+  local __dirname="${PWD##*/}"
+  local __date=`date +%-m/%-d/%y`
+  local __user=`whoami`
 
-main() {
+  type npm >/dev/null 2>&1 || (echo "You must install \`npm\` before running this script." && exit 0);
 
   while read -p "name: (${__dirname}) " __app_name; do
 
@@ -59,4 +59,4 @@ main() {
 
 }
 
-main
+angular_generate
