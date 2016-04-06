@@ -58,5 +58,3 @@ angular_generate() {
   npm install && npm start
 
 }
-
-angular_generate
