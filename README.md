@@ -10,16 +10,13 @@ The skeleton app itself can be found [here](https://github.com/hehly/angular2-st
 
 Load script upon login.
 
+    $ cd ~/.login_scripts
     $ git clone https://github.com/hehly/angular2-starter-project-generator.git
-    $ cd angular2-starter-project-generator
-    $ mv angular_generate.sh ${HOME}/.my_scripts/
-    $ echo 'source ${HOME}/.my_scripts/angular_generate.sh' >> ${HOME}/.bash[_profile/rc]
-    $ source ${HOME}/.bash[_profile/rc]
+    $ echo 'source ~/.login_scripts/angular2-starter-project-generator/angular_generate.sh' >> ~/.bashrc
+    $ source ~/.bashrc
 
 Create a skeleton application.
 
     $ angular_generate
-    $ name: (current-dir) [Enter optional name]
-    $ description: [Enter optional description]
     
 _Voila_
